@@ -10,7 +10,8 @@ const WeatherApp = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const [city, setCity] = useState('');
 
-    const apiKey = '7a333b0051bb95b8234e4bd2a2bff446';
+    const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
+    console.log(apiKey)
 
     useEffect(() => {
         const getWeatherData = async () => {
