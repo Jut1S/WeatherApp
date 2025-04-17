@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SearchBar from './SearchBar';
-import WeatherDisplay from './WeatherDisplay';
-import Footer from './Footer';
-import '../App.css';
+import SearchBar from './components/SearchBar';
+import WeatherDisplay from './components/WeatherDisplay';
+import Footer from './components/Footer';
+import './App.css';
 
 const WeatherApp = () => {
     const [weatherData, setWeatherData] = useState(null);
